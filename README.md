@@ -42,7 +42,7 @@ $ npx hardhat clean
 $ npx hardhat compile
 
 # faz o deploy do contrato na rede escolhida
-$ npx hardhat run --network testnet scripts/deploy.js --network testnet
+$ npx hardhat run scripts/deploy.js --network bsctestnet
 ```
 
 ### Instalando o Front-End

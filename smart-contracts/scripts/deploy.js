@@ -9,14 +9,14 @@ async function main() {
   console.log("Deployed STKN:", stkn.address);
 
   //STKNICO
-  console.log("Deploying stknICO Contract...");
+  console.log("Deploying StknICO Contract...");
   const StknICOFactory = await ethers.getContractFactory("StknICO");
-  const stknICO = await StknICOFactory.deploy(
-    "0x00f2a05f8327ac26e1994b92dbd4e4813bfa8609",
+  const StknICO = await StknICOFactory.deploy(
+    "0x31Af915910AB95698ed8b2C5E0847DEdfc5A956f",
     stkn.address
   );
 
-  console.log("Deployed stknICO:", stknICO.address);
+  console.log("Deployed StknICO:", StknICO.address);
 }
 
 main()
