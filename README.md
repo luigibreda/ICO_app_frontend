@@ -63,4 +63,4 @@ $ npm start
  - Criar uma home estilo Landing Page
  - Adequar as sub páginas 
  - Criar a identidade visual da aplicação 
- 
+
