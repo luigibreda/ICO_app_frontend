@@ -17,7 +17,7 @@ const HomeScreen = () => {
 
         <div className="flex flex-col w-full items-center md:mr-5">
           <div className="card mt-4">
-            <div className="text-2xl text-center p-4">Private Sale Details</div>
+            <div className="text-2xl text-center p-4">Pre-Venda Detalhes</div>
           </div>
           <Circle />
           <div className="btn m-4" onClick={() => navigate("/token")}>
