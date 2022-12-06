@@ -85,7 +85,7 @@ const ContactScreen = () => {
     <div className="mt-6">
       <div className="flex justify-center items-center h-[80vh]">
         <div className="contact-container z-10">
-          <div className="flex justify-center mt-6 mb-1">Contact Us</div>
+          <div className="flex justify-center mt-6 mb-1">Fale Conosco</div>
           <form ref={form} onSubmit={handleValidation} autoComplete="off">
             <div className="flex items-center flex-col">
               <ContactItem
