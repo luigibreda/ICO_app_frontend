@@ -3,7 +3,7 @@ import { stakingICOAddress, stakingICOAbi } from "./constants";
 import { toast } from "react-toastify";
 
 async function loadContract(signer, chainId, setContract, address) {
-  if (chainId !== 5) {
+  if (chainId !== 97) {
     toast.error(
       "Please Change your network to Network for Buying Tokens"
     );
