@@ -39,25 +39,25 @@ const SaleEnds = () => {
     <div className="sale-ends-container">
       <div className="card text-center">
         <div className="p-10">
-          <div>TOKEN SALE ENDS IN</div>
+          <div>PRÉ-VENDA:</div>
 
           {/* Time Limit*/}
           <div className="flex m-4 gap-3 justify-center">
             <SaleEndTimer
               time={timer.days}
-              text={timer.days > 1 ? "Days" : "Day"}
+              text={timer.days > 1 ? "Dias" : "Dia"}
             />
             <SaleEndTimer
               time={timer.hours}
-              text={timer.hours > 1 ? "Hours" : "Hour"}
+              text={timer.hours > 1 ? "Horas" : "Hora"}
             />
             <SaleEndTimer
               time={timer.minutes}
-              text={timer.minutes > 1 ? "Minutes" : "Minute"}
+              text={timer.minutes > 1 ? "Minutos" : "Minuto"}
             />
             <SaleEndTimer
               time={timer.seconds}
-              text={timer.seconds > 1 ? "Seconds" : "Second"}
+              text={timer.seconds > 1 ? "Segundos" : "Segundo"}
             />
           </div>
 
@@ -81,10 +81,11 @@ const SaleEnds = () => {
           ) : (
             <div className="flex justify-center items-center flex-col mt-10">
               <div className="text-[1rem] mb-2">
-                Please Connect Wallet for Buying Tokens
+                Conecte sua carteira para comprar o Token
               </div>
+              <br />
               <div className="btn text-[1rem]" onClick={handleConnectWallet}>
-                Connect Wallet
+                Conectar Carteira
               </div>
             </div>
           )}

@@ -54,6 +54,14 @@
   @apply min-h-[75vh] p-4;
 }
 
+.screen-wrapper {
+  background-image: url(https://iili.io/HCirKEF.jpg);
+  background-position: right;
+  background-size: auto;
+  box-shadow: inset 0 0 0 1000px rgb(22 43 111 / 82%);
+  background-blend-mode: overlay !important;
+}
+
 .btn {
   @apply bg-blue-600 hover:bg-blue-500 hover:scale-105 text-white font-bold px-6 py-2 w-fit h-fit 
   rounded-3xl sm:cursor-pointer font-poppins;
@@ -153,4 +161,9 @@
 .header {
   @apply sticky top-0 flex justify-between items-center px-3 sm:px-8 
   py-10 bg-[#281B87] h-[60px] z-50;
+  background-color: rgb(22 43 111);
+}
+
+.logo-header {
+  max-width: 250px !important;
 }

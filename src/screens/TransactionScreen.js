@@ -16,7 +16,7 @@ const TransactionScreen = () => {
 
   const handleUserTransaction = async () => {
     const data = await userTransactions(
-      `https://api-testnet.bscscan.com/api?module=account&action=balance&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&tag=latest&apikey=${process.env.REACT_APP_ETHERSCAN_API}`
+      `https://api-testnet.bscscan.com/api?module=contract&action=getabi&address=0xae13d989dac2f0debff460ac112a837c89baa7cd${process.env.REACT_APP_ETHERSCAN_API}`
     );
     setAllTransaction(data);
 

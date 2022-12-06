@@ -7,6 +7,7 @@ import SaleEnds from "../components/SaleEnds";
 const HomeScreen = () => {
   const navigate = useNavigate();
   return (
+    <>
     <div className="md:ml-6 md:flex md:h-[80vh] md:items-center">
       <div className="flex justify-center items-center w-full">
         <SaleEnds />
@@ -17,15 +18,18 @@ const HomeScreen = () => {
 
         <div className="flex flex-col w-full items-center md:mr-5">
           <div className="card mt-4">
-            <div className="text-2xl text-center p-4">Private Sale Details</div>
+            <div className="text-2xl text-center p-4">Pre-Venda Detalhes</div>
           </div>
           <Circle />
           <div className="btn m-4" onClick={() => navigate("/token")}>
-            Buy Now
+            Comprar
           </div>
         </div>
       </div>
+    </div><div className="md:ml-6 md:flex md:h-[80vh] md:items-center">
+      <h1>teste</h1>
     </div>
+    </>
   );
 };
 

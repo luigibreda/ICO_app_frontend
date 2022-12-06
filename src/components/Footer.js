@@ -5,12 +5,12 @@ const Footer = () => {
     <div className="flex justify-center font-poppins font-bold m-3">
       Made with &#10084; from &nbsp;
       <a
-        href="https://github.com/kaamil-ahamadh"
+        href="https://github.com/luigibreda"
         target="_blank"
         rel="noreferrer noopener"
         className="text-cyan-500"
       >
-        Kaamil
+        Web3Kings
       </a>
     </div>
   );

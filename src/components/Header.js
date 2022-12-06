@@ -11,6 +11,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
+    <>
     <div className="header">
       <div className="flex gap-2">
         <NavbarMobile />
@@ -19,7 +20,7 @@ const Header = () => {
           className="font-poppins font-bold text-[21px] hover:text-blue-400"
           onClick={() => navigate("/")}
         >
-          WVW Token
+          <img src="https://iili.io/HCso1gS.png" className="logo-header" />
         </div>
       </div>
       <div className="flex justify-center items-center text-center">
@@ -31,9 +32,10 @@ const Header = () => {
               0,
               6
             )}......${account.address.substring(36, 42)}`
-          : "Connect"}
+          : "Conectar"}
       </div>
     </div>
+    </>
   );
 };
 
