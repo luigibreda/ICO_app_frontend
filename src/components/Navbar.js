@@ -20,10 +20,10 @@ const Navbar = () => {
         Exchange
       </Link>
       <Link to="/faq" className="navbar-title">
-        Faq
+        F.A.Q
       </Link>
       <Link to="/contact" className="navbar-title">
-        Contact
+        Contato
       </Link>
     </div>
   );
