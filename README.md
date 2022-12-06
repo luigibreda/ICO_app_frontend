@@ -44,3 +44,23 @@ $ npx hardhat compile
 # faz o deploy do contrato na rede escolhida
 $ npx hardhat run --network testnet scripts/deploy.js --network testnet
 ```
+
+### Instalando o Front-End
+```
+# Clona o repositório
+$ git clone https://github.com/luigibreda/ICO_app_frontend.git
+
+# Instala as dependencias com npm
+$ npm install
+
+# Inicia o servidor local
+$ npm start
+
+```
+
+## Próximos passos
+ - Modificar interface de acordo com o as funcionalidades
+ - Criar uma home estilo Landing Page
+ - Adequar as sub páginas 
+ - Criar a identidade visual da aplicação 
+ 
