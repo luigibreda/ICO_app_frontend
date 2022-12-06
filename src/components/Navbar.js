@@ -17,7 +17,7 @@ const Navbar = () => {
         Token Distribution
       </Link>
       <Link to="/faucet" className="navbar-title">
-        Faucet
+        Exchange
       </Link>
       <Link to="/faq" className="navbar-title">
         Faq
