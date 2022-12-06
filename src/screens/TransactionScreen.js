@@ -16,7 +16,7 @@ const TransactionScreen = () => {
 
   const handleUserTransaction = async () => {
     const data = await userTransactions(
-      `https://api.bscscan.com/api?module=logs&action=getLogs&fromBlock=0&toBlock=latest&address=0x82337DC0582661F53cC795ad7f96eae46c7f5efc&topic0=0x2e206bbdd5787cd6d3e97144dec044f9f15dd77a257afd27fa70cad6f03feae3&apikey=${process.env.REACT_APP_ETHERSCAN_API}`
+      `https://api.bscscan.com/api?module=logs&action=getLogs&fromBlock=0&toBlock=latest&address=0x567300399c95b5a83a854Ce3E1c3554dE418aA1d&topic0=0x2e206bbdd5787cd6d3e97144dec044f9f15dd77a257afd27fa70cad6f03feae3&apikey=${process.env.REACT_APP_ETHERSCAN_API}`
     );
     setAllTransaction(data);
 
@@ -25,7 +25,7 @@ const TransactionScreen = () => {
     }
 
     const yourTx = await userTransactions(
-      `https://api.bscscan.com/api?module=logs&action=getLogs&fromBlock=0&toBlock=latest&address=0x82337DC0582661F53cC795ad7f96eae46c7f5efc&topic0=0x2e206bbdd5787cd6d3e97144dec044f9f15dd77a257afd27fa70cad6f03feae3&topic2=0x000000000000000000000000${account.address.substring(
+      `https://api.bscscan.com/api?module=logs&action=getLogs&fromBlock=0&toBlock=latest&address=0x567300399c95b5a83a854Ce3E1c3554dE418aA1d&topic0=0x2e206bbdd5787cd6d3e97144dec044f9f15dd77a257afd27fa70cad6f03feae3&topic2=0x000000000000000000000000${account.address.substring(
         2,
         42
       )}&apikey=${process.env.REACT_APP_ETHERSCAN_API}`

@@ -167,3 +167,8 @@
 .logo-header {
   max-width: 250px !important;
 }
+
+.flex.flex-col.w-full.items-center.md\:mr-5 {
+  background-color: #ffffff3b;
+  border-radius: 7px;
+}
