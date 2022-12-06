@@ -5,16 +5,16 @@ const Navbar = () => {
   return (
     <div className="hidden sm:inline">
       <Link to="/" className="navbar-title">
-        Home
+        Inicio
       </Link>
       <Link to="/token" className="navbar-title">
-        Token
+        Token WVW
       </Link>
       <Link to="/transaction" className="navbar-title">
-        Transaction
+        Transações Recentes
       </Link>
       <Link to="/tokenDistribution" className="navbar-title">
-        Token Distribution
+        Token Distribuição
       </Link>
       <Link to="/faucet" className="navbar-title">
         Exchange

@@ -65,7 +65,7 @@ const SaleEnds = () => {
           {icoState.tokensAvailable ? (
             <div className="w-full">
               <div className="mb-1">
-                {millify(icoState.tokensAvailable)} STKN
+                {millify(icoState.tokensAvailable)} WVW
               </div>
               <div className="h-4 w-full bg-gray-200 mb-6 rounded-xl text-md">
                 <div
@@ -75,7 +75,7 @@ const SaleEnds = () => {
                 >
                   {(icoState.tokensAvailable / 5000000) * 100} %
                 </div>
-                Tokens Available
+                Tokens Disponíveis 
               </div>
             </div>
           ) : (
