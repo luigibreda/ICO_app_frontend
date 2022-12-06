@@ -10,7 +10,7 @@ const Footer = () => {
         rel="noreferrer noopener"
         className="text-cyan-500"
       >
-        Kaamil
+        Web3Kings
       </a>
     </div>
   );
