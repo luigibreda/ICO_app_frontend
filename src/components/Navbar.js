@@ -23,7 +23,7 @@ const Navbar = () => {
         F.A.Q
       </Link>
       <Link to="/contact" className="navbar-title">
-        Contato
+        Contatos
       </Link>
     </div>
   );
