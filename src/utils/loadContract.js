@@ -10,13 +10,13 @@ async function loadContract(signer, chainId, setContract, address) {
     return;
   }
   const _stknICOContract = new ethers.Contract(
-    StakingICOAddress,
-    StakingICOAbi,
+    stakingICOAddress,
+    stakingICOAbi,
     signer
   );
 
   setContract({
-    StknICO: _stknICOContract,
+    stknICO: _stknICOContract,
   });
 
   //Read From Contract
@@ -29,7 +29,6 @@ async function loadContract(signer, chainId, setContract, address) {
     await _stknICOContract.investorBalanceOf(address)
   );
 
-  console.log('luigi2');
   return {
     tokensAvailable,
     investorBalance,
