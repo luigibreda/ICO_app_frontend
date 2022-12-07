@@ -18,7 +18,7 @@ const providerOptions = {
 };
 
 async function connectWallet(handleConnectWallet) {
-  //Infura ID Check
+  //Infura ID Check bruno
   if (!process.env.REACT_APP_INFURA_ID) {
     console.log("Missing Infura Id");
     return;
