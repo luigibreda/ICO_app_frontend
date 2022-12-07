@@ -6,7 +6,10 @@ const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider,
     options: {
-      infuraId: process.env.REACT_APP_INFURA_ID,
+      rpc: {
+        1: "https://bsc.getblock.io/2405a096-2639-4238-99d4-3aa346b16be9/testnet/",
+        // ... 
+      },
     },
     opera: {
       package: true,
@@ -15,7 +18,7 @@ const providerOptions = {
 };
 
 async function connectWallet(handleConnectWallet) {
-  //Infura ID Check
+  //Infura ID Check bruno
   if (!process.env.REACT_APP_INFURA_ID) {
     console.log("Missing Infura Id");
     return;
