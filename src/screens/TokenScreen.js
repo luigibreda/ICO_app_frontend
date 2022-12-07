@@ -19,7 +19,7 @@ const TokenScreen = () => {
       handleConnectWallet();
       return;
     }
-
+    console.log('luigi teste');
     try {
       const tx = await contract.StknICO.invest({
         value: ethers.utils.parseEther((0.0001 * userAmount).toString()),

@@ -8,7 +8,7 @@ const providerOptions = {
     options: {
       rpc: {
         1: "https://bsc.getblock.io/2405a096-2639-4238-99d4-3aa346b16be9/testnet/",
-        // ...
+        // ... 
       },
     },
     opera: {
