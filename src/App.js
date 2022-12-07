@@ -48,7 +48,7 @@ function App() {
 
   const handleConnectWallet = async () => {
     const { _provider, _signer, _address, _balance, _chainId } =
-      await connectWallet(handleConnectWallet);
+      await connectWallet(handleConnectWallet); 
 
     const { tokensAvailable, investorBalance } = await loadContract(
       _signer,

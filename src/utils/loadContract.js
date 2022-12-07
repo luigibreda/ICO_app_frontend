@@ -28,8 +28,7 @@ async function loadContract(signer, chainId, setContract, address) {
   const investorBalance = ethers.utils.formatEther(
     await _stknICOContract.investorBalanceOf(address)
   );
-  console.log(_stknICOContract);
-  console.log(address);
+
   console.log('luigi2');
   return {
     tokensAvailable,

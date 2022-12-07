@@ -20,6 +20,7 @@ const TokenScreen = () => {
       return;
     }
     console.log('luigi teste');
+    console.log(icoState);
     try {
       const tx = await contract.stknICO.invest({
         value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
