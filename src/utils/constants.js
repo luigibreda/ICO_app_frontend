@@ -1,4 +1,4 @@
-import stknICO from "./stknICO.json";
+import StknICO from "./StknICO.json";
 
-export const stakingICOAddress = "0x6770aeB9A40d202C8F301dc6F8A145e3D18A5607";
-export const stakingICOAbi = stknICO.abi;
+export const StakingICOAddress = "0x3cce165778ba4ED9Cd40712fb72Ce058003c9930";
+export const StakingICOAbi = StknICO.abi;
