@@ -35,7 +35,7 @@ const ContactScreen = () => {
       .then(
         (result) => {
           if (result.text === "OK") {
-            toast.success("Message Sent Successfully");
+            toast.success("Mensagem enviada com sucesso");
             setName("");
             setEmail("");
             setSubject("");
