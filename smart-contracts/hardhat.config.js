@@ -63,7 +63,7 @@ module.exports = {
       accounts: [privateKey]
     },
     testnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+      url: "https://bsc.getblock.io/2405a096-2639-4238-99d4-3aa346b16be9/testnet/",
       chainId: 97,
       gasPrice: 20000000000,
       accounts: [privateKey]

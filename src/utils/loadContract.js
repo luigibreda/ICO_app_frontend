@@ -10,13 +10,13 @@ async function loadContract(signer, chainId, setContract, address) {
     return;
   }
   const _stknICOContract = new ethers.Contract(
-    stakingICOAddress,
-    stakingICOAbi,
+    StakingICOAddress,
+    StakingICOAbi,
     signer
   );
 
   setContract({
-    stknICO: _stknICOContract,
+    StknICO: _stknICOContract,
   });
 
   //Read From Contract

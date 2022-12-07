@@ -12,10 +12,10 @@ contract StknICO {
     IERC20 public token;
 
     //ICO Details
-    uint public tokenPrice = 0.000001 ether;
+    uint public tokenPrice = 0.0001 ether;
     uint public hardCap = 500 ether;
     uint public raisedAmount;
-    uint public minInvestment = 0.00001 ether;
+    uint public minInvestment = 0.0001 ether;
     uint public maxInvestment = 3 ether;
     uint public icoStartTime;
     uint public icoEndTime;
@@ -85,7 +85,7 @@ contract StknICO {
         require(ICOState == State.BEFORE, "ICO isn't in before state");
 
         icoStartTime = block.timestamp;
-        icoEndTime = icoStartTime + (86400 * 365);
+        icoEndTime = icoStartTime + (86400 * 2);
         ICOState = State.RUNNING;
     }
 
