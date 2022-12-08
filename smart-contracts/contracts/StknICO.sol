@@ -15,7 +15,7 @@ contract StknICO {
     uint public tokenPrice = 0.0001 ether;
     uint public hardCap = 500 ether;
     uint public raisedAmount;
-    uint public minInvestment = 0.001 ether;
+    uint public minInvestment = 0.0001 ether;
     uint public maxInvestment = 3 ether;
     uint public icoStartTime;
     uint public icoEndTime;
@@ -81,11 +81,11 @@ contract StknICO {
     /* Admin Functions */
 
     //Start, Halt and End ICO
-    function startICO() external onlyAdmin {
+    function startICO() public {
         require(ICOState == State.BEFORE, "ICO isn't in before state");
 
         icoStartTime = block.timestamp;
-        icoEndTime = icoStartTime + (86400 * 365);
+        icoEndTime = icoStartTime + (86400 * 2);
         ICOState = State.RUNNING;
     }
 
