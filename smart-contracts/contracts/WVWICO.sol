@@ -146,7 +146,7 @@ contract WVWICO {
         return true;
     }
 
-    // user function to invest in ICO
+    // user function to test invest function
 
     //Burn Tokens
     function burn() external returns (bool) {

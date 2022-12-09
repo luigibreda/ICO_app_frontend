@@ -24,7 +24,7 @@ const handleError = (error, text) => {
     console.log(error.message);
   } else {
     toast.error(error.message);
-    console.log(error.message);
+    console.log(error.message); 
   }
 };
 

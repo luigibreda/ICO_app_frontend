@@ -79,10 +79,10 @@ describe("WVWToken", function () {
         console.log('Tokens Disponiveis:', tokenDisp.toString());
 
         const investTest = await WVWTokenICO.invest();
-        console.log(investTest);
+        console.log(investTest);    
     });
     
-
+    
 
   });
 
