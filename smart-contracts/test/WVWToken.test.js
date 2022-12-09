@@ -52,4 +52,38 @@ describe("WVWToken", function () {
     expect(await wvwToken.symbol()).to.equal("WVWToken");
   });
 
+  describe("WVWToken ICO", function () {
+    it("Teste do Token WVW", async function () {
+        const WVWToken = await ethers.getContractFactory("WVWToken");
+        const wvwToken = await WVWToken.deploy();
+        await wvwToken.deployed();
+
+        console.log(wvwToken.address);
+        const WVWTokenICOFacotory = await ethers.getContractFactory("WVWICO");
+        const WVWTokenICO = await WVWTokenICOFacotory.deploy('0x180eaDb617233c44985729fc916eC7b7F12Bc056', wvwToken.address);
+        await WVWTokenICO.deployed();
+        console.log(WVWTokenICO.address);
+        
+        
+        const [owner, addr1] = await ethers.getSigners();
+        const ownerAddress = await owner.getAddress();
+        const ownerBalance = await wvwToken.balanceOf(ownerAddress);
+
+        const statusICO = await WVWTokenICO.getICOState();
+        console.log('Status ICO:', statusICO);
+        const startICO = await WVWTokenICO.startICO();
+        const statusICO2 = await WVWTokenICO.getICOState();
+        console.log('Status ICO:', statusICO2);
+
+        const tokenDisp = await WVWTokenICO.investorBalanceOf(ownerAddress);
+        console.log('Tokens Disponiveis:', tokenDisp.toString());
+
+        const investTest = await WVWTokenICO.invest();
+        console.log(investTest);
+    });
+    
+
+
+  });
+
 });
