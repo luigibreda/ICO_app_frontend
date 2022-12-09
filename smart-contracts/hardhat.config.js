@@ -24,7 +24,7 @@ task("accounts", "👩🕵👨🙋👷 Prints the list of accounts (only for loc
  */
 module.exports = {
   
-  defaultNetwork: "testnet", // <-- change here for other network, default use hardhat network.
+  defaultNetwork: "localhost", // <-- change here for other network, default use hardhat network.
   networks: {
   	localhost: {
       url: "http://127.0.0.1:8545"
