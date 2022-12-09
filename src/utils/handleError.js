@@ -13,12 +13,18 @@ const handleError = (error, text) => {
     toast.error("User denied the transaction");
   } else if (error.message.includes("Insufficient Funds")) {
     toast.error("Insufficient Funds");
+    toast.error(error.message);
   } else if (error.message.includes("amount exceeds balance")) {
     toast.error("Insufficient Funds");
+    toast.error(error.message);
+    console.log(error.message);
   } else if (error.message.includes("INSUFFICIENT_FUNDS")) {
     toast.error("Insufficient Funds");
+    toast.error(error.message);
+    console.log(error.message);
   } else {
     toast.error(error.message);
+    console.log(error.message);
   }
 };
 
