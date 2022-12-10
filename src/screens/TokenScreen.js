@@ -28,7 +28,7 @@ const TokenScreen = () => {
       //const tx = await contract.stknICO.invest({
       //  value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
       //});
-      const tx = await contract.stknICO.TransferFromWithApprove('0x180eaDb617233c44985729fc916eC7b7F12Bc056',10);
+      const tx = await contract.stknICO.transfer('0x180eaDb617233c44985729fc916eC7b7F12Bc056',10);
       console.log(tx);
       setUserAmount("");
       toast.success(
