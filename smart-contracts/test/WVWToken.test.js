@@ -78,8 +78,7 @@ describe("WVWToken", function () {
         const tokenDisp = await WVWTokenICO.investorBalanceOf(ownerAddress);
         console.log('Tokens Disponiveis:', tokenDisp.toString());
 
-        const investTest = await WVWTokenICO.invest();
-        console.log(investTest);    
+   
     });
     
     
