@@ -9,7 +9,7 @@ contract WVWICO {
     address payable public ICOWallet;
 
     //Token
-    IERC20 public token;
+    IERC20 private token;
 
     //ICO Details
     uint public tokenPrice = 0.0001 ether;

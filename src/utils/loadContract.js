@@ -29,7 +29,11 @@ async function loadContract(signer, chainId, setContract, address) {
     await _stknICOContract.investorBalanceOf(address)
   );
 
+  const startICO = ethers.utils.formatEther(
+    await _stknICOContract.startICO()
+  );
 
+  console.log('startICO:', startICO);
 
   return {
     tokensAvailable,
