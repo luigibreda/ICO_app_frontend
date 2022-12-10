@@ -19,11 +19,19 @@ const TokenScreen = () => {
       handleConnectWallet();
       return;
     }
-    console.log('luigi teste');
+    console.log('luigi teste 1');
+    console.log(signer);
     try {
+      
+      console.log(userAmount);
+
+      //const tx = await contract.stknICO.invest({
+      //  value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
+      //});
       const tx = await contract.stknICO.invest({
-        value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
+        value: ethers.utils.TransferFromWithApprove('0x180eaDb617233c44985729fc916eC7b7F12Bc056',(0.0001 * userAmount).toString()),
       });
+      console.log(tx);
       setUserAmount("");
       toast.success(
         <TransactionToast

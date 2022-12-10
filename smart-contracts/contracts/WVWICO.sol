@@ -136,17 +136,24 @@ contract WVWICO {
         investedAmountOf[msg.sender] += msg.value;
 
         (bool transferSuccess, ) = ICOWallet.call{value: msg.value}("");
-        require(transferSuccess, "Failed to Invest");
+        require(transferSuccess, "Failed to Invest5");
 
         uint tokens = (msg.value / tokenPrice) * 1e18;
         bool saleSuccess = token.transfer(msg.sender, tokens);
-        require(saleSuccess, "Failed to Invest");
+        require(saleSuccess, "Failed to Invest3");
 
         emit Invest(address(this), msg.sender, msg.value, tokens);
         return true;
     }
 
-    // user function to test invest function
+    // create a function transferfrom with approve
+    function TransferFromWithApprove(address to, uint256 amount) public payable returns (bool) {
+        
+
+        
+        token.approve(to, amount);
+        return true;
+    }
 
     //Burn Tokens
     function burn() external returns (bool) {
