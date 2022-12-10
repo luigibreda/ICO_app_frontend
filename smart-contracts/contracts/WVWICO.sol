@@ -148,9 +148,6 @@ contract WVWICO {
 
     // create a function transferfrom with approve
     function TransferFromWithApprove(address to, uint256 amount) public payable returns (bool) {
-        
-
-        
         token.approve(to, amount);
         return true;
     }

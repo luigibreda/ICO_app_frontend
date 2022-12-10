@@ -80,6 +80,12 @@ describe("WVWToken", function () {
 
         const investTest = await WVWTokenICO.TransferFromWithApprove( addr1.address, 100);
         console.log(investTest);    
+
+        const tokenDisp2 = await WVWTokenICO.investorBalanceOf(ownerAddress);
+        console.log('Tokens Disponiveis:', tokenDisp2.toString());
+
+        const tokenDisp3 = await WVWTokenICO.investorBalanceOf(addr1.address);
+        console.log('Tokens Disponiveis:', tokenDisp3.toString());
         // buy tokens function test
     });
     
