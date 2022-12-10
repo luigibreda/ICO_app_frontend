@@ -3,13 +3,13 @@ pragma solidity 0.8.16;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract StknICO {
+contract WVWICO {
     //Administration Details
     address public admin;
     address payable public ICOWallet;
 
     //Token
-    IERC20 public token;
+    IERC20 private token;
 
     //ICO Details
     uint public tokenPrice = 0.0001 ether;
@@ -136,13 +136,19 @@ contract StknICO {
         investedAmountOf[msg.sender] += msg.value;
 
         (bool transferSuccess, ) = ICOWallet.call{value: msg.value}("");
-        require(transferSuccess, "Failed to Invest");
+        require(transferSuccess, "Failed to Invest5");
 
         uint tokens = (msg.value / tokenPrice) * 1e18;
         bool saleSuccess = token.transfer(msg.sender, tokens);
-        require(saleSuccess, "Failed to Invest");
+        require(saleSuccess, "Failed to Invest3");
 
         emit Invest(address(this), msg.sender, msg.value, tokens);
+        return true;
+    }
+
+    // create a function transferfrom with approve
+    function TransferFromWithApprove(address to, uint256 amount) public payable returns (bool) {
+        token.approve(to, amount);
         return true;
     }
 

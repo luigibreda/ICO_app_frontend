@@ -29,6 +29,8 @@ async function loadContract(signer, chainId, setContract, address) {
     await _stknICOContract.investorBalanceOf(address)
   );
 
+
+
   return {
     tokensAvailable,
     investorBalance,

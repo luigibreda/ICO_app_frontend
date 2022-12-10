@@ -19,12 +19,17 @@ const TokenScreen = () => {
       handleConnectWallet();
       return;
     }
-    console.log('luigi teste');
-    console.log(icoState);
+    console.log('luigi teste 1');
+    console.log(account);
     try {
-      const tx = await contract.StknICO.invest({
-        value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
-      });
+      
+      console.log(userAmount);
+
+      //const tx = await contract.stknICO.invest({
+      //  value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
+      //});
+      const tx = await contract.stknICO.TransferFromWithApprove(account.address,10);
+      console.log(tx);
       setUserAmount("");
       toast.success(
         <TransactionToast
@@ -66,7 +71,7 @@ const TokenScreen = () => {
           <TokenDetails title="Maximum Supply" value={millify(10000000)} />
           <TokenDetails
             title="Token Address"
-            value="0x2FE8b9EEC16cE10BFEDCedd423238C812d70dE5F"
+            value="0x82337DC0582661F53cC795ad7f96eae46c7f5efc"
           />
         </div>
       </div>
